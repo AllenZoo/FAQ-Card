@@ -33,24 +33,28 @@ body {
   background-color: white;
   min-width: 500px;
   /*max-width: 1440px; */
-  width: 1440px;
   width: 100%;
   width: auto;
+
+  max-height: 700px;
 
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 
   border: none;
   border-radius: 20px;
-  padding: 50px;
+  /* padding: 50px; */
+
+  transition: height 1s;
 
   /* position: relative;
   left: 0px;
   right: 0px;
   top: 0px; */
 
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
 }
 
 .image-container {
