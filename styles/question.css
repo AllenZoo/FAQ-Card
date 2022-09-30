@@ -35,6 +35,10 @@ input[type="checkbox"]:checked + div .question-answer {
   width: 100%;
   min-width: 350px;
   max-width: 350px;
+
+  max-height: 350px;
+  min-height: 350px;
+
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -44,6 +48,7 @@ input[type="checkbox"]:checked + div .question-answer {
 
 .question-container {
   display: flex;
+  flex: 1;
   flex-direction: column;
   margin-bottom: 20px;
 }

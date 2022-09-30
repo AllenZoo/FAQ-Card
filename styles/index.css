@@ -41,37 +41,10 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   border: none;
   border-radius: 20px;
-  /* padding: 50px; */
-
-  transition: height 1s;
-
-  /* position: relative;
-  left: 0px;
-  right: 0px;
-  top: 0px; */
 
   flex-wrap: wrap;
-}
-
-.image-container {
-  background-image: url("../images/bg-pattern-desktop.svg");
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.desk-image {
-  z-index: 100;
-  position: relative;
-  top: -100px;
-}
-
-.box-image {
-  z-index: 200;
-  position: relative;
 }
