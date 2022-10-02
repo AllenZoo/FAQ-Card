@@ -35,7 +35,7 @@ input[type="checkbox"]:checked + div .question-answer {
   width: 100%;
   min-width: 350px;
 
-  max-height: 350px;
+  /* max-height: 350px; */
   min-height: 350px;
 
   /* flex: 1; */
