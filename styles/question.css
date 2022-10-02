@@ -52,7 +52,7 @@ input[type="checkbox"]:checked + div .question-answer {
   /* flex: 1; */
   flex-direction: column;
   margin-bottom: 20px;
-  max-width: 410px;
+  max-width: 400px;
 }
 
 .question {
@@ -86,6 +86,7 @@ label:hover {
   margin-top: 12px;
   display: none;
   color: hsl(240, 6%, 50%);
+  font-size: 14px;
 }
 
 .line {
