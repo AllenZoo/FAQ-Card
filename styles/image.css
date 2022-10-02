@@ -1,58 +1,115 @@
-.image-container {
-  position: relative;
-  top: 0;
-  bottom: 0;
+/* Desktop Design*/
+@media (max-width: 1440px), (min-width: 1440px) {
+  .image-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
 
-  /* background-image: url("../images/bg-pattern-desktop.svg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: -230px;
-  background-position-y: 150px; */
-  /* transform: scaleX(-1); */
+    max-width: 500px;
+    min-width: 500px;
 
-  max-width: 500px;
-  min-width: 500px;
+    max-height: 500px;
+    min-height: 500px;
 
-  max-height: 500px;
-  min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 
-  padding-top: 15px;
-  padding-bottom: 15px;
+  .background-image {
+    position: absolute;
+    top: -300px;
+    right: 110px;
+  }
+
+  .desk-image {
+    z-index: 100;
+
+    position: absolute;
+    top: 70px;
+    right: 110px;
+    /* transform: scaleX(-1); */
+  }
+
+  .box-image {
+    z-index: 200;
+    position: absolute;
+    left: -80px;
+    top: 200px;
+  }
+  .no-overflow {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    min-width: 500px;
+    min-height: 530px;
+  }
 }
 
-.background-image {
-  position: absolute;
-  top: -300px;
-  right: 110px;
-}
+/* Mobile Design*/
+@media (max-width: 375px), (min-width: 375px) {
+  .image-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
 
-.desk-image {
-  z-index: 100;
+    max-width: 325px;
+    min-width: 325px;
 
-  position: absolute;
-  top: 70px;
-  right: 110px;
-  /* transform: scaleX(-1); */
-}
+    max-height: 100px;
+    min-height: 100px;
 
-.box-image {
-  z-index: 200;
-  position: absolute;
-  left: -80px;
-  top: 200px;
-}
-.no-overflow {
-  position: relative;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 
-  min-width: 500px;
-  min-height: 530px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .desk-image {
+    z-index: 100;
+    top: 0px;
+
+    /* transform: scaleX(-1); */
+  }
+
+  .background-image {
+    top: -20px;
+  }
+
+  .background-image,
+  .desk-image {
+    position: absolute;
+
+    right: 5px;
+    width: 300px;
+    height: auto;
+  }
+
+  .box-image {
+    visibility: hidden;
+  }
+  .no-overflow {
+    position: relative;
+    top: -200px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 320px;
+    min-height: 300px;
+  }
 }

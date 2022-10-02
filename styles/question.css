@@ -31,83 +31,171 @@ input[type="checkbox"]:checked + div .question-answer {
   display: block;
 }
 
-.faq-container-section {
-  width: 100%;
-  min-width: 350px;
+/* Desktop Design*/
+@media (max-width: 1440px), (min-width: 1440px) {
+  .faq-container-section {
+    width: 100%;
+    min-width: 350px;
 
-  /* max-height: 350px; */
-  min-height: 350px;
+    /* max-height: 350px; */
+    min-height: 350px;
 
-  /* flex: 1; */
+    /* flex: 1; */
 
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-  padding-left: 0px;
-  /* padding-bottom: 100px; */
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    padding-left: 0px;
+    /* padding-bottom: 100px; */
+  }
+
+  .question-container {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
+
+  .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+
+  .question:hover,
+  label:hover {
+    cursor: pointer;
+    /* color: hsl(14, 88%, 65%); */
+  }
+
+  .question-arrow-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .question-text {
+    position: relative;
+    pointer-events: none;
+    font-size: 16px;
+    top: 0px;
+    color: hsl(237, 12%, 33%);
+  }
+
+  .question-answer {
+    margin-top: 12px;
+    display: none;
+    color: hsl(240, 6%, 50%);
+    font-size: 14px;
+  }
+
+  .line {
+    width: 100%;
+    background-color: hsl(240, 5%, 91%);
+    height: 1px;
+  }
+
+  .faq-title {
+    margin-bottom: 30px;
+  }
+
+  .down-arrow {
+    position: relative;
+    width: 15px;
+    height: 10px;
+    pointer-events: none;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
-.question-container {
-  display: flex;
-  /* flex: 1; */
-  flex-direction: column;
-  margin-bottom: 20px;
-  max-width: 400px;
-}
+/* Mobile Design*/
+@media (max-width: 375px), (min-width: 375px) {
+  .faq-container-section {
+    width: 100%;
+    min-width: 200px;
+    max-width: 300px;
 
-.question {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
+    /* max-height: 350px; */
+    min-height: 350px;
 
-.question:hover,
-label:hover {
-  cursor: pointer;
-  /* color: hsl(14, 88%, 65%); */
-}
+    /* flex: 1; */
 
-.question-arrow-row-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    padding-left: 0px;
+    /* padding-bottom: 100px; */
+  }
 
-.question-text {
-  position: relative;
-  pointer-events: none;
-  font-size: 16px;
-  top: 0px;
-  color: hsl(237, 12%, 33%);
-}
+  .question-container {
+    display: flex;
+    /* flex: 1; */
+    flex-direction: column;
+    margin-bottom: 20px;
+    max-width: 400px;
+  }
 
-.question-answer {
-  margin-top: 12px;
-  display: none;
-  color: hsl(240, 6%, 50%);
-  font-size: 14px;
-}
+  .question {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
 
-.line {
-  width: 100%;
-  background-color: hsl(240, 5%, 91%);
-  height: 1px;
-}
+  .question:hover,
+  label:hover {
+    cursor: pointer;
+    /* color: hsl(14, 88%, 65%); */
+  }
 
-.faq-title {
-  margin-bottom: 30px;
-}
+  .question-arrow-row-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-.down-arrow {
-  position: relative;
-  width: 15px;
-  height: 10px;
-  pointer-events: none;
-}
+  .question-text {
+    position: relative;
+    pointer-events: none;
+    font-size: 14px;
+    top: 0px;
+    color: hsl(237, 12%, 33%);
+  }
 
-label {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  .question-answer {
+    margin-top: 12px;
+    display: none;
+    color: hsl(240, 6%, 50%);
+    font-size: 12px;
+  }
+
+  .line {
+    width: 100%;
+    background-color: hsl(240, 5%, 91%);
+    height: 1px;
+  }
+
+  .faq-title {
+    margin-bottom: 30px;
+  }
+
+  .down-arrow {
+    position: relative;
+    width: 15px;
+    height: 10px;
+    pointer-events: none;
+  }
+
+  label {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

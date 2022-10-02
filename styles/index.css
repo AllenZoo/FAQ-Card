@@ -29,6 +29,7 @@ body {
   margin: auto;
 }
 
+/* Desktop Design*/
 @media (max-width: 1440px), (min-width: 1440px) {
   .card-container {
     background-color: white;
@@ -54,11 +55,12 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+/* Mobile Design*/
+@media (max-width: 375px), (min-width: 375px) {
   .card-container {
-    background-color: red;
-    min-width: 400px;
-
+    background-color: white;
+    min-width: 330px;
+    max-width: 330px;
     width: 100%;
     width: auto;
 
