@@ -56,7 +56,8 @@ body {
 }
 
 /* Mobile Design*/
-@media (max-width: 375px), (min-width: 375px) {
+
+@media (max-width: 375px) {
   .card-container {
     background-color: white;
     min-width: 330px;
@@ -64,8 +65,10 @@ body {
     width: 100%;
     width: auto;
 
-    max-height: 700px;
-    min-height: 900px;
+    max-height: 750px;
+    min-height: 448px;
+
+    padding-bottom: 30px;
 
     display: flex;
     flex-direction: column;

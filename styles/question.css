@@ -116,22 +116,26 @@ input[type="checkbox"]:checked + div .question-answer {
 }
 
 /* Mobile Design*/
-@media (max-width: 375px), (min-width: 375px) {
+@media (max-width: 375px) {
   .faq-container-section {
     width: 100%;
     min-width: 200px;
     max-width: 300px;
 
     /* max-height: 350px; */
-    min-height: 350px;
+    min-height: 200px;
 
     /* flex: 1; */
-
+    padding: 0;
     display: flex;
     flex-direction: column;
-    padding: 10px;
-    padding-left: 0px;
+
     /* padding-bottom: 100px; */
+  }
+
+  .faq-title {
+    position: relative;
+    margin: auto;
   }
 
   .question-container {

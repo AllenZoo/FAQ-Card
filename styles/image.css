@@ -54,7 +54,7 @@
 }
 
 /* Mobile Design*/
-@media (max-width: 375px), (min-width: 375px) {
+@media (max-width: 375px) {
   .image-container {
     position: relative;
     top: 0;
@@ -70,28 +70,25 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-
-    padding-top: 15px;
-    padding-bottom: 15px;
   }
 
   .desk-image {
     z-index: 100;
-    top: 0px;
+    top: 70px;
 
     /* transform: scaleX(-1); */
   }
 
   .background-image {
-    top: -20px;
+    top: 50px;
   }
 
   .background-image,
   .desk-image {
     position: absolute;
 
-    right: 5px;
-    width: 300px;
+    right: 35px;
+    width: 250px;
     height: auto;
   }
 
