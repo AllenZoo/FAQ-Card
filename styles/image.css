@@ -38,9 +38,11 @@
   .box-image {
     z-index: 200;
     position: absolute;
-    left: -80px;
-    top: 200px;
+    left: -90px;
+    top: 205px;
+    animation: move 2s linear both infinite alternate;
   }
+
   .no-overflow {
     position: relative;
     top: 0;
@@ -108,5 +110,14 @@
 
     min-width: 320px;
     min-height: 300px;
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translate(-40px);
   }
 }

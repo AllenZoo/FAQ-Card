@@ -117,6 +117,10 @@ input[type="checkbox"]:checked + div .question-answer {
 
 /* Mobile Design*/
 @media (max-width: 375px) {
+  input[type="checkbox"]:hover:not(:checked) + div .question-text {
+    color: hsl(237, 12%, 33%);
+  }
+
   .faq-container-section {
     width: 100%;
     min-width: 200px;
